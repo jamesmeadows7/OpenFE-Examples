@@ -1,0 +1,6 @@
+[environment]
+python = "/opt/homebrew/Caskroom/miniforge/base/envs/openfe"
+
+# Ignore false positives from RDKit's compiled modules, which ty can't introspect
+[rules]
+unresolved-attribute = "ignore"
