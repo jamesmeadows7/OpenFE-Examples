@@ -1,3 +1,5 @@
+# Absolute hydration free energy of benzene in water
+
 import json
 import pathlib
 
@@ -79,5 +81,7 @@ outdict = {
     },
 }
 
-with open("ahfe_json/benzene_results.json") as stream:
+output_dir = pathlib.Path("ahfe_json")
+output_dir.mkdir(exist_ok=True)
+with open(output_dir / "benzene_results.json", "w") as stream:
     json.dump(outdict, stream, cls=gufe.tokenization.JSON_HANDLER.encoder)

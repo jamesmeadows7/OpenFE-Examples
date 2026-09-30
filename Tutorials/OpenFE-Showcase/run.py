@@ -1,3 +1,5 @@
+# RBFE workflow from atom mapping and ligand networks to running transformation calculations
+
 import pathlib
 
 import matplotlib

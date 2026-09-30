@@ -1,3 +1,5 @@
+# RBFE campaign for a set of ligands bound to TYK2 protein
+
 import pathlib
 
 import matplotlib

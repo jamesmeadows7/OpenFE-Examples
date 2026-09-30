@@ -1,3 +1,5 @@
+# Absolute binding free energy of toluene to T4 lysozyme
+
 import json
 import pathlib
 
@@ -90,5 +92,7 @@ outdict = {
     },
 }
 
-with open("abfe_json/toluene_results.json") as stream:
+output_dir = pathlib.Path("abfe_json")
+output_dir.mkdir(exist_ok=True)
+with open(output_dir / "toluene_results.json", "w") as stream:
     json.dump(outdict, stream, cls=gufe.tokenization.JSON_HANDLER.encoder)

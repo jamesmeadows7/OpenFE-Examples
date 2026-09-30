@@ -1,3 +1,5 @@
+# Plain MD simulation of benzene bound to T4 lysozyme
+
 import pathlib
 
 import gufe
