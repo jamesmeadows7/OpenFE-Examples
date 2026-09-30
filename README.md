@@ -8,6 +8,7 @@ Learning [OpenFE](https://docs.openfree.energy/en/stable/index.html) through a s
 | 2 | [MD Protocol](https://docs.openfree.energy/en/stable/tutorials/md_tutorial.html) | [run.py](Tutorials/MD-Protocol/run.py) |
 | 3 | [RBFE with the Python API](https://docs.openfree.energy/en/stable/tutorials/rbfe_python_tutorial.html) | [run.py](Tutorials/RBFE-Python-API/run.py) |
 | 4 | [ABFE Protocol](https://docs.openfree.energy/en/stable/tutorials/abfe_tutorial.html) | [run.py](Tutorials/ABFE-Protocol/run.py) |
+| 5 | [Solvation Free Energy Protocol](https://docs.openfree.energy/en/stable/tutorials/ahfe_tutorial.html) | [run.py](Tutorials/Solvation-Free-Energy-Protocol/run.py) |
 
 ## Setup
 
