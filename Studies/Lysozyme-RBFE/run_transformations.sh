@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=t4l_rbfe
 #SBATCH --partition=cuda
-#SBATCH --time=3-00:00:00
+#SBATCH --time=1-00:00:00
 #SBATCH --gres=gpu:h200_nvl_1g.18gb:1
 #SBATCH --array=0-5
 

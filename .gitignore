@@ -12,3 +12,4 @@ wheels/
 # OpenFE Output
 shared*/
 scratch*/
+slurm-*.out
