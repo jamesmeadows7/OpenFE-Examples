@@ -4,7 +4,6 @@ import openfe
 from openfe.protocols.openmm_afe import AbsoluteBindingProtocol
 from openfe.protocols.openmm_utils.charge_generation import bulk_assign_partial_charges
 from openfe.protocols.openmm_utils.omm_settings import OpenFFPartialChargeSettings
-from openff.units import unit
 from rdkit import Chem
 
 # Load Ligands
@@ -38,8 +37,7 @@ protein = openfe.ProteinComponent.from_pdb_file(pathlib.Path("inputs/t4_lysozyme
 
 settings = AbsoluteBindingProtocol.default_settings()
 settings.protocol_repeats = 1
-settings.restraint_settings.host_min_distance = 0.5 * unit.nanometer
-settings.restraint_settings.host_max_distance = 1.5 * unit.nanometer
+settings.restraint_settings.anchor_finding_strategy = "multi-residue"
 settings.engine_settings.compute_platform = None
 protocol = AbsoluteBindingProtocol(settings=settings)
 
